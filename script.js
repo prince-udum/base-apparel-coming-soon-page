@@ -10,13 +10,10 @@ form.addEventListener("submit", (e) => {
     email.style.border = "2px solid hsl(0, 93%, 68%)";
     errorMsg.style.visibility = "visible";
     errorIcon.style.visibility = "visible";
-
-    setTimeout(() => {
-      email.style.border = "1px solid hsl(0, 36%, 70%)";
-      errorMsg.style.visibility = "hidden";
-      errorIcon.style.visibility = "hidden";
-    }, 2000);
   } else {
     email.value = "";
+    email.style.border = "1px solid hsl(0, 36%, 70%)";
+    errorMsg.style.visibility = "hidden";
+    errorIcon.style.visibility = "hidden";
   }
 });
